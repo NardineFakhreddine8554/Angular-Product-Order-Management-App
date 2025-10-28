@@ -1,0 +1,87 @@
+
+
+.dashboard-container {
+    padding: 24px;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    color: white;
+    cursor: pointer !important;
+  
+    mat-icon {
+      font-size: 36px;
+    }
+  
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  
+    p {
+      margin: 0;
+      opacity: 0.9;
+    }
+  }
+  
+  .orders {
+    background-color: #3f51b5;
+  }
+  
+  .products {
+    background-color: #009688;
+  }
+  
+  .users {
+    background-color: #ff9800;
+  }
+  
+  .table-section {
+    margin-top: 32px;
+  
+    h3 {
+      margin-bottom: 12px;
+    }
+  
+    table {
+      width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; /* increase horizontal space */
+    height: 64px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .app-title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+    margin: 0 40px; /* adds more breathing space between title and button */
+  }
+  
+ 
+  
+
+  

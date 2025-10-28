@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": "9187",
+      "firstName": "nad",
+      "lastName": "nad",
+      "email": "nad@gmail.com",
+      "password": "nadonado"
+    },
+    {
+      "id": "7fd4",
+      "firstName": "nardine",
+      "lastName": "fakher",
+      "email": "nfd@gmail.com",
+      "password": "nadonado"
+    }
+  ],
+  "products": [
+    {
+      "name": "Laptop",
+      "price": 300,
+      "description": "high quality",
+      "id": "cca7"
+    },
+    {
+      "name": "Laptop",
+      "price": 50,
+      "description": "high quality",
+      "id": "e14d"
+    },
+    {
+      "name": "Laptop Lenovo",
+      "price": 5500,
+      "description": "high quality",
+      "id": "5ee7"
+    },
+    {
+      "name": "fwd",
+      "price": 232,
+      "description": "ewed",
+      "id": "9afc"
+    },
+    {
+      "name": "sumsung",
+      "price": 305,
+      "description": "high quality",
+      "id": "136a"
+    }
+  ],
+  "orders": [
+    {
+      "customer": "rita",
+      "items": [
+        {
+          "productId": "5ee7",
+          "quantity": 1,
+          "price": 5500,
+          "subtotal": 5500
+        },
+        {
+          "productId": "cca7",
+          "quantity": 1,
+          "price": 300,
+          "subtotal": 300
+        },
+        {
+          "productId": "9afc",
+          "quantity": 1,
+          "price": 232,
+          "subtotal": 232
+        }
+      ],
+      "total": 6032,
+      "date": "2025-10-26T16:38:08.683Z",
+      "id": "1693"
+    },
+    {
+      "id": "37d0",
+      "customer": "test",
+      "items": [
+        {
+          "productId": "136a",
+          "quantity": 2,
+          "price": 305,
+          "subtotal": 610
+        },
+        {
+          "productId": "5ee7",
+          "quantity": 5,
+          "price": 5500,
+          "subtotal": 27500
+        }
+      ],
+      "total": 28110,
+      "date": "2025-10-26T16:50:44.353Z"
+    }
+  ]
+}

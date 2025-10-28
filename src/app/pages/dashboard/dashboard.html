@@ -1,0 +1,99 @@
+<mat-toolbar color="primary" class="dashboard-toolbar">
+  <span class="app-title">E-Commerce Dashboard</span>
+
+  <span class="spacer"></span>
+
+  <button mat-raised-button color="accent" (click)="onLogout()">
+    <mat-icon>logout</mat-icon>
+    Logout
+  </button>
+</mat-toolbar>
+
+<div class="dashboard-container">
+  <!-- Stats Cards -->
+  <div class="stats-grid">
+    <mat-card class="stat-card orders" routerLink="/orders">
+      <mat-icon>shopping_cart</mat-icon>
+      <div>
+        <h3>{{ stats.orders }}</h3>
+        <p>Orders</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card products" routerLink="/products">
+      <mat-icon>inventory_2</mat-icon>
+      <div>
+        <h3>{{ stats.products }}</h3>
+        <p>Products</p>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card users">
+      <mat-icon>group</mat-icon>
+      <div>
+        <h3>{{ stats.users }}</h3>
+        <p>Users</p>
+      </div>
+    </mat-card>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Latest Products Table -->
+  <div class="table-section">
+    <h3>Latest Products</h3>
+    <table mat-table [dataSource]="latestProducts" class="mat-elevation-z2">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef>Price ($)</th>
+        <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="createdAt">
+        <th mat-header-cell *matHeaderCellDef>Date Added</th>
+        <td mat-cell *matCellDef="let element">{{ element.createdAt }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumnsProducts"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumnsProducts"></tr>
+    </table>
+  </div>
+
+  <!-- Latest Orders Table -->
+  <div class="table-section">
+    <h3>Latest Orders</h3>
+    <table mat-table [dataSource]="latestOrders" class="mat-elevation-z2">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Order ID</th>
+        <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="customer">
+        <th mat-header-cell *matHeaderCellDef>Customer</th>
+        <td mat-cell *matCellDef="let element">{{ element.customer }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="total">
+        <th mat-header-cell *matHeaderCellDef>Total ($)</th>
+        <td mat-cell *matCellDef="let element">{{ element.total | number : '1.2-2' }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>Date</th>
+        <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumnsOrders"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumnsOrders"></tr>
+    </table>
+  </div>
+</div>
