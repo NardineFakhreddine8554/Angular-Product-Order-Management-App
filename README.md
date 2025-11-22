@@ -1,59 +1,56 @@
-# ECommerce
+# Angular-Product-Order-Management-App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
+A modern **Angular 20** web application built with **Angular Material** for managing products and orders.  
+It includes **CRUD operations**, **route guards**, **logout functionality**, and integration with a **mock REST API**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
 
+### 🧩 Product Management
+- View list of products
+- Create new products
+- Edit existing products
+- Delete products (with confirmation dialog)
+
+### 📦 Order Management
+- Create new orders linked to products
+- Add multiple products with quantities and automatic subtotal/total calculation
+- View, edit, or delete orders
+- Confirm before deletion
+
+### 🔐 Authentication
+- Simple login/logout flow with dashboard protection via **AuthGuard**
+
+### 🎨 UI & UX
+- Built using **Angular Material**
+- Responsive toolbar with navigation
+- Modern, clean design consistent across products and orders pages
+
+---
+
+## 🏗️ Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend | Angular 20 (Standalone Components) |
+| UI Library | Angular Material |
+| Mock API | JSON Server |
+| Styling | SCSS / CSS |
+| Build Tool | Angular CLI |
+| SSR Support | Optional (can be disabled) |
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
 ```bash
-ng serve
-```
+git clone https://github.com/your-username/angular-product-order-management.git
+cd angular-product-order-management
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
