@@ -46,7 +46,7 @@ It includes **CRUD operations**, **route guards**, **logout functionality**, and
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/angular-product-order-management.git
+git clone https://github.com/nardine-fakhreddine/angular-product-order-management.git
 cd angular-product-order-management
 
 
